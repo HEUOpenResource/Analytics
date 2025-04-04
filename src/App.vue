@@ -10,7 +10,7 @@
       </div>
     </header>
     <main>
-      <header>
+      <!-- <header> -->
         <!-- <Alert>
           <AlertDescription>
             <p>· Han Analytics 是一个简单的网络分析跟踪器和仪表板，托管在被称为赛博菩萨的 Cloudflare 上,无成本稳定运行,每天可达10万次免费统计。</p>
@@ -20,7 +20,7 @@
             </p>
           </AlertDescription>
         </Alert> -->
-      </header>
+      <!-- </header> -->
 
       <section class="main">
         <div class="pb-5 grid md:grid-cols-2 sm:grid-cols-1 items-start">

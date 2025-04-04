@@ -33,7 +33,7 @@
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Web Site</SelectLabel>
+                    <!-- <SelectLabel>Web Site</SelectLabel> -->
                     <SelectItem :value="i" v-for="i in siteList" :key="i">{{ i }}</SelectItem>
                   </SelectGroup>
                 </SelectContent>
@@ -47,7 +47,7 @@
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Cycle Time</SelectLabel>
+                    <!-- <SelectLabel>Cycle Time</SelectLabel> -->
                     <SelectItem :value="i.value" v-for="i in timeList" :key="i.name">{{ i.name }}</SelectItem>
                   </SelectGroup>
                 </SelectContent>
@@ -57,7 +57,7 @@
           <div
             class="flex justify-end text-center md:text-right line-clamp-1 [&>.views-item]:flex [&>.views-item]:flex-col [&>.views-item]:items-center md:[&>.views-item]:items-end [&>.views-item]:gap-4 [&>.views-item>span]:text-sm [&>.views-item>p]:text-3xl [&>.views-item>p]:line-clamp-1 [&>.views-item>p]:w-full">
             <div class="views-item w-full overflow-hidden">
-              <span>访问次数</span>
+              <span>浏览量</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.views === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />
@@ -65,7 +65,7 @@
               <p v-else>{{ resData.visit.views }}</p>
             </div>
             <div class="views-item w-full overflow-hidden">
-              <span>访问者</span>
+              <span>访客数</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.visitor === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />
@@ -73,7 +73,7 @@
               <p v-else>{{ resData.visit.visitor }}</p>
             </div>
             <div class="views-item w-full overflow-hidden">
-              <span>访问</span>
+              <span>访问次数</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.visit === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />

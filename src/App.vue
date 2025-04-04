@@ -4,14 +4,14 @@
       <div class="main">
         <div class="logo">
           <img src="./assets/favicon.ico">
-          <span>Han Analytics</span>
+          <span>HEU Analytics</span>
         </div>
-        <h2>简单优雅的Web分析</h2>
+        <h2>哈尔滨工程大学课程攻略共享计划-Web页面统计分析</h2>
       </div>
     </header>
     <main>
       <header>
-        <Alert>
+        <!-- <Alert>
           <AlertDescription>
             <p>· Han Analytics 是一个简单的网络分析跟踪器和仪表板，托管在被称为赛博菩萨的 Cloudflare 上,无成本稳定运行,每天可达10万次免费统计。</p>
             <p>· 域名、服务器、数据库 通通都不用! 托管在 Cloudflare Pages 上即可快速部署网站分析仪表板。</p>
@@ -19,7 +19,7 @@
                 target="_blank">Han-Analytics</a>
             </p>
           </AlertDescription>
-        </Alert>
+        </Alert> -->
       </header>
 
       <section class="main">
@@ -57,7 +57,7 @@
           <div
             class="flex justify-end text-center md:text-right line-clamp-1 [&>.views-item]:flex [&>.views-item]:flex-col [&>.views-item]:items-center md:[&>.views-item]:items-end [&>.views-item]:gap-4 [&>.views-item>span]:text-sm [&>.views-item>p]:text-3xl [&>.views-item>p]:line-clamp-1 [&>.views-item>p]:w-full">
             <div class="views-item w-full overflow-hidden">
-              <span>Views</span>
+              <span>访问次数</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.views === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />
@@ -65,7 +65,7 @@
               <p v-else>{{ resData.visit.views }}</p>
             </div>
             <div class="views-item w-full overflow-hidden">
-              <span>Visitors</span>
+              <span>访问者</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.visitor === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />
@@ -73,7 +73,7 @@
               <p v-else>{{ resData.visit.visitor }}</p>
             </div>
             <div class="views-item w-full overflow-hidden">
-              <span>Visits</span>
+              <span>访问</span>
               <div class="space-y-2 w-[50%]" v-if="resData.visit.visit === undefined">
                 <Skeleton class="h-4  w-[50%] ml-auto" />
                 <Skeleton class="h-4" />
@@ -88,7 +88,7 @@
         <div class="pt-20 grid md:grid-cols-2 sm:grid-cols-1 gap-[16px]">
           <Card class="box-border flex flex-col w-full h-[460px] overflow-hidden">
             <CardHeader>
-              <CardTitle>Pages</CardTitle>
+              <CardTitle>页面</CardTitle>
             </CardHeader>
             <CardContent class="box-border pt-0 w-full h-full overflow-hidden">
               <ScrollArea class="box-border p-2 pt-0 h-full w-full pages-list" v-if="resData.path != undefined">
@@ -113,7 +113,7 @@
 
           <Card class="box-border flex flex-col w-full h-[460px] overflow-hidden">
             <CardHeader>
-              <CardTitle>Referrers</CardTitle>
+              <CardTitle>来源网站</CardTitle>
             </CardHeader>
             <CardContent class="box-border pt-0 w-full h-full overflow-hidden">
               <ScrollArea class="box-border p-2 pt-0 h-full w-full pages-list" v-if="resData.referrer != undefined">
@@ -143,7 +143,7 @@
         <div class="pt-6 grid xl:grid-cols-3 gap-[16px] md:grid-cols-2 sm:grid-cols-1">
           <Card class="box-border flex flex-col w-full h-[460px] overflow-hidden">
             <CardHeader>
-              <CardTitle>Browsers</CardTitle>
+              <CardTitle>浏览器</CardTitle>
             </CardHeader>
             <CardContent class="box-border pt-0 w-full h-full overflow-hidden">
               <ScrollArea class="box-border p-2 pt-0 h-full w-full pages-list" v-if="resData.soft != undefined">
@@ -168,7 +168,7 @@
 
           <Card class="box-border flex flex-col w-full h-[460px] overflow-hidden">
             <CardHeader>
-              <CardTitle>OS</CardTitle>
+              <CardTitle>操作系统</CardTitle>
             </CardHeader>
             <CardContent class="box-border pt-0 w-full h-full overflow-hidden">
               <ScrollArea class="box-border p-2 pt-0 h-full w-full pages-list" v-if="resData.os != undefined">
@@ -195,7 +195,7 @@
 
           <Card class="box-border flex flex-col w-full h-[460px] overflow-hidden">
             <CardHeader>
-              <CardTitle>Areas</CardTitle>
+              <CardTitle>来源地区</CardTitle>
             </CardHeader>
             <CardContent class="box-border pt-0 w-full h-full overflow-hidden">
               <ScrollArea class="box-border p-2 pt-0 h-full w-full pages-list" v-if="resData.area != undefined">
@@ -222,7 +222,7 @@
       </section>
     </main>
     <footer>
-      <p><img src="./assets/svg/ing.svg"></p>
+      <!-- <p><img src="./assets/svg/ing.svg"></p>
       <p>
         <a href="https://pages.cloudflare.com" target="_blank" rel="noopener noreferrer"><img
             src="./assets/svg/framework.svg"></a>
@@ -230,7 +230,7 @@
           rel="noopener noreferrer"><img src="./assets/svg/cdn.svg"></a>
         <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img src="./assets/svg/web.svg"></a>
         <a href="https://api.vvhan.com" target="_blank"><img src="./assets/svg/surppot.svg"></a>
-      </p>
+      </p> -->
     </footer>
   </section>
   <div class="z-[999999999]">
@@ -295,7 +295,7 @@ const loginFn = async () => {
 // 站点列表
 const siteList = ref<Array<string>>([])
 const siteValue = ref<string>('')
-const timeList = [{ name: 'Today', value: 'today' }, { name: 'Yesterday', value: '1d' }, { name: 'Last 7 days', value: '7d' }, { name: 'Last 30 days', value: '30d' }, { name: 'Last 60 days', value: '60d' }, { name: 'Last 90 days', value: '90d' }]
+const timeList = [{ name: '今天', value: 'today' }, { name: '昨天', value: '1d' }, { name: '最近 7 天', value: '7d' }, { name: '最近 30 天', value: '30d' }, { name: '最近 60 天', value: '60d' }, { name: '最近 90 天', value: '90d' }]
 const timeValue = ref<string>('today')
 const getSiteList = async () => {
   vh.showLoading()

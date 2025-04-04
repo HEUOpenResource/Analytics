@@ -6,7 +6,7 @@
           <img src="./assets/favicon.ico">
           <span>HEU Analytics</span>
         </div>
-        <h2>哈尔滨工程大学课程攻略共享计划-Web页面统计分析</h2>
+        <h2><a href="http://heu.us.kg/" target="_blank" class="highlight-link">哈尔滨工程大学课程攻略共享计划</a>-Web页面统计分析</h2>
       </div>
     </header>
     <main>
@@ -221,8 +221,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <!-- <p><img src="./assets/svg/ing.svg"></p>
+    <!-- <footer>
+      <p><img src="./assets/svg/ing.svg"></p>
       <p>
         <a href="https://pages.cloudflare.com" target="_blank" rel="noopener noreferrer"><img
             src="./assets/svg/framework.svg"></a>
@@ -230,8 +230,8 @@
           rel="noopener noreferrer"><img src="./assets/svg/cdn.svg"></a>
         <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img src="./assets/svg/web.svg"></a>
         <a href="https://api.vvhan.com" target="_blank"><img src="./assets/svg/surppot.svg"></a>
-      </p> -->
-    </footer>
+      </p>
+    </footer> -->
   </section>
   <div class="z-[999999999]">
     <Toaster />
